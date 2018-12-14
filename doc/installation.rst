@@ -16,7 +16,7 @@ If you are using Ubuntu you can use the Ubuntu packages from our
 
     $ sudo add-apt-repository ppa:gijzelaar/snap7
     $ sudo apt-get update
-    $ sudo apt-get install libsnap71 libsnap7-dev
+    $ sudo apt-get install libsnap7-1 libsnap7-dev
 
 Windows
 ~~~~~~~
@@ -38,7 +38,7 @@ a manual compile. Download the file and run::
 
      $ p7zip -d snap7-full-1.0.0.7z  # requires the p7 program
      $ cd build/<platform>           # where platform is unix or windows
-     $ make -f <arch>.mk             # where arch is your architecture, for example x86_64_linux
+     $ make -f <arch>.mk install     # where arch is your architecture, for example x86_64_linux
 
 For more information about or help with compilation please check out the
 documentation on the `snap7 website <http://snap7.sourceforge.net/>`_.
