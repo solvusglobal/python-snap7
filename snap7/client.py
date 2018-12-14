@@ -34,8 +34,8 @@ class Client(object):
     pointer = None
     library = None
 
-    def __init__(self):
-        self.library = load_library()
+    def __init__(self, lib_location=None):
+        self.library = load_library(lib_location=lib_location)
         self.create()
 
     def __del__(self):
