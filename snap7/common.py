@@ -61,7 +61,7 @@ def check_error(code, context="client"):
     """
     if code:
         error = error_text(code, context)
-        logger.error(error)
+        # logger.error(error)
         raise Snap7Exception(error)
 
 
